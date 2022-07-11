@@ -1,0 +1,103 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+Span{
+    color: red;
+}
+
+ .line{
+     background-color: black;
+     width: 80%;
+     border: 0 none;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 4px;
+     height: 2px;
+ }
+ 
+
+.nav-item a::after{
+    content: '';
+    width: 0%;
+    transition: 0.5s;
+    background: red;
+    margin: auto;
+    height: 2px;
+    display: block;
+}
+
+.nav-item a:hover::after{
+    width: 100%;
+}
+
+.boxesH4{
+    font-family:cursive;
+    font-size: 40px;
+    position: relative;
+    /* max-width: 600px; */
+}
+
+/* h4::before{
+    content:"";
+    display: block;
+    width: 44%;
+    height: 2px;
+    background:grey;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 50%;
+    z-index: -1;
+} */
+
+.hrLine{
+    padding: 1px 200px;
+    background-color: silver;
+}
+
+@media(max-width:768px) {
+    /* .boxesH4::before{
+        content: "";
+        width: 200px;
+    } */
+
+    /* .myInput{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+    } */
+    .boxesH4{
+        font-size: 20px;
+        margin: 0 1rem !important;
+        width: 1000px !important;
+    }
+    .hrLine{
+        padding: 1px 60px;
+    }
+    
+}
+
+@media(max-width:480px) {
+    .hrLine{
+        padding: 1px 30px;
+    }
+
+    .boxesH4{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:280px) {
+    .hrLine{
+        padding: 1px 20px;
+    }
+}
+/* 
+#email{
+  width: 120%;
+} */
