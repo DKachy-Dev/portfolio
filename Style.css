@@ -53,8 +53,14 @@
     width: 100%;
     height: 100%;
     backdrop-filter: blur(10px);
-    display: none;
+    visibility: hidden;
+    transition: 0.5s ease;
+    transition-property: visibilty;
 
+}
+
+.popup-wrapper.active{
+    visibility: visible;
 }
 
 .pop-up{
@@ -73,10 +79,21 @@
     position: relative;
     border-radius: 20px;
     box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
-
+    transform: scale(0);
+    transition: 0.5s ease;
+    transition-property: transform;
 }
-.popup-content{
-    display: block;
+ 
+.popup-wrapper.active .pop-up{
+    transform: scale(1);
+}
+
+.img-boy{
+    animation: moveinright 1.5s;
+}
+
+.name{
+    animation: moveinleft 1.5s
 }
 
     
@@ -157,6 +174,13 @@ Span{
     color: black;
 }
 
+.skew{
+    content: '';
+    height: 100px;
+    bottom: -70px;
+    background: red;
+}
+
 
 /* h4::before{
     content:"";
@@ -171,6 +195,13 @@ Span{
     z-index: -1;
 } */
 
+.circle{
+    padding: 8px 3px ;
+    border-radius: 50%;
+    background-color: rgb(242, 242, 250);
+    border: 8px  rgb(242, 242, 250);;
+}
+
 .hrLine{
     padding: 1px 200px;
     background-color: rgb(242, 242, 250);
@@ -180,6 +211,38 @@ Span{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     margin-bottom: 20px;
+}
+
+@keyframes moveinright{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80%{
+        transform: translateX(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveinleft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80%{
+        transform: translateX(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 
@@ -206,6 +269,8 @@ Span{
     }
     
 }
+
+
 
 @media(max-width:480px) {
     .hrLine{
