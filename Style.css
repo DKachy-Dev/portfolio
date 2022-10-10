@@ -1,5 +1,5 @@
  body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: P22 Mackinac Pro sofia-pro;
     overflow-x: hidden;
     /* background-image: url(images/mainbg.jpg); */
     background-size: cover;
@@ -26,12 +26,10 @@
     display: inline-flex;
     /* justify-content: center;
     align-content: center; */
-    
-
 }
 .pop-head h3{
     font-weight: light;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: P22 Mackinac Pro;
 }
 .pop-head i{
     font-weight: light;
@@ -96,6 +94,18 @@
     animation: moveinleft 1.5s
 }
 
+.btn{
+    font-family:sofia-pro;
+}
+.footer-h1{
+    font-family: P22 Mackinac Pro;
+    color: #F8F9FA;
+}
+
+.footer-p{
+    color: #F8F9FA;
+    font-family: sofia-pro;
+}
     
 button{
     background: none;
@@ -151,14 +161,14 @@ Span{
 }
 
 .boxesH4{
-    font-family:cursive;
+    font-family:P22 Mackinac Pro;
     font-size: 40px;
     position: relative;
     /* max-width: 600px; */
 }
 
 .biz{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: P22 Mackinac Pro;
     font-size: 2.5em;
     margin: auto;
     color: transparent;
@@ -174,12 +184,12 @@ Span{
     color: black;
 }
 
-.skew{
+/* .skew{
     content: '';
     height: 100px;
     bottom: -70px;
-    background: red;
-}
+    background: #011936;
+} */
 
 
 /* h4::before{
@@ -208,9 +218,64 @@ Span{
 }
 
 .user{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: P22 Mackinac Pro;
     font-size: 1.5rem;
     margin-bottom: 20px;
+}
+
+.footerb{
+    margin-top: 40px;
+}
+
+.Footerbrand{
+ color: #F8F9FA;
+ font-family: sofia-pro;
+ font-size: 1.5rem;
+ text-decoration:none;
+ user-select: none;
+ 
+
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #F8F9FA;
+    cursor: pointer;
+    list-style: none !important;
+}
+
+.footer-li{
+    font-family: P22 Mackinac Pro;
+    color:  rgb(251, 76, 76);
+    font-size: 1.2rem;
+}
+
+.footerlink{
+    text-decoration: none;
+    user-select: none;
+    font-family: sofia-pro;
+    list-style: none;
+    font-size: 0.7rem;
+
+}
+/* .footerlist{
+    text-align: start;
+    justify-content: flex-start;
+} */
+
+.footerlist div{
+    list-style: none;
+    color: #F8F9FA;     
+    font-family: sofia-pro;
+    font-size: 0.7rem;
+}
+.legal-text a{
+    color:  rgb(251, 76, 76);
+    font-family: sofia-pro;
+    font-size: 0.7rem;
+}
+
+.footertxt{
+    color:  rgb(251, 76, 76);
 }
 
 @keyframes moveinright{
