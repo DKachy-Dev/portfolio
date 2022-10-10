@@ -254,7 +254,7 @@ a, a:hover, a:focus, a:active {
     user-select: none;
     font-family: sofia-pro;
     list-style: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
 }
 /* .footerlist{
@@ -266,12 +266,12 @@ a, a:hover, a:focus, a:active {
     list-style: none;
     color: #F8F9FA;     
     font-family: sofia-pro;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 .legal-text a{
     color:  rgb(251, 76, 76);
     font-family: sofia-pro;
-    font-size: 0.7rem;
+    font-size: 0.95rem;
 }
 
 .footertxt{
